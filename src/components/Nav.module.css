@@ -3,8 +3,6 @@
     display: flex;
 }
 
-
-
 .logoDiv{
     display: flex;
     flex-direction: row;
@@ -38,7 +36,7 @@
     width: 48%;
 }
 .controls a {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-decoration: none;
     color: white;

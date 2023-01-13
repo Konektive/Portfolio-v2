@@ -5,6 +5,7 @@ import jsIcon from "../assets/javascript.jpg";
 import typeIcon from "../assets/typescript.png";
 import dockerIcon from "../assets/docker.png";
 import responiveIcon from "../assets/responsive.jpg.png";
+import moon from "../assets/moon.png.jpg";
 
 const Main = () => {
   return (
@@ -12,6 +13,9 @@ const Main = () => {
       <h1>Technologies I work With!</h1>
 
       <div className={styles.stack}>
+        <div>
+          <img src={moon} alt="" />
+        </div>
         <div>
           <img src={reactIcon} alt="" />
         </div>

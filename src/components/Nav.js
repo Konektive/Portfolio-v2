@@ -19,7 +19,7 @@ const Nav = () => {
           <a href="">Projects</a>
           <a href="">Info</a>
           <a href="">Contact Me!</a>
-          <a className={styles.cv} href={CV} download>
+          <a className={styles.cv} href={CV} download="Krystian_Sporysz_CV">
             <button className={styles.button}>
               <span className={styles.button_lg}>
                 <span className={styles.button_sl}></span>

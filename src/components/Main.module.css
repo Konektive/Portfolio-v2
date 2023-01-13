@@ -17,3 +17,10 @@ width: 15vh;
     border-radius: 15px;
     overflow: hidden;
 }
+
+.stack div:first-child{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 10%;
+    height: 10%;
+}
