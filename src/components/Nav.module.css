@@ -1,0 +1,163 @@
+.nav{
+    height: 5rem;
+    display: flex;
+}
+
+
+.logoDiv{
+    display: flex;
+    flex-direction: row;
+    color: rgb(252,226,137);
+    font-size: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+.navImg{
+    height: 100%;
+    border-right: 0.3rem solid rgb(153, 137, 84);
+    margin-right: .8em;
+    padding-right: .8em;
+}
+.navImg img{
+    border-radius: 50%;
+    height: 100%;
+}
+
+.controls{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+    width: 48%;
+}
+.controls a {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-bottom: .2rem solid transparent;
+    padding-top: .2rem;
+}
+
+.controls a:hover {
+    border-bottom: .2rem solid white;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7D8082;
+  transition: all .15s ease;
+}
+
+.button::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.button::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:active::before,
+.button:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.button:active::before {
+  top: 3px;
+}
+
+.button:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #ff4655;
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+.button_text {
+  position: relative;
+}
+
+.button:hover {
+  color: #0f1923;
+}
+
+.button:hover .button_sl {
+  width: calc(100% + 15px);
+}
+
+.button:hover .button_lg::after {
+  background-color: #fff;
+}
