@@ -1,10 +1,15 @@
+ .header {
+   height: calc(100vh - 5rem);
+   position: relative;
+ }
+ 
  .img{
     position: absolute;
     bottom: 5vh;
-    right: -10%;
-    width: 70%;
+    right: 10%;
     height: 70%;
     animation: imageMove linear 1s;
+    /* pointer-events: none; */
  }
  
  .img img {

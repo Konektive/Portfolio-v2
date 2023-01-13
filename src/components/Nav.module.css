@@ -4,10 +4,11 @@
 }
 
 
+
 .logoDiv{
     display: flex;
     flex-direction: row;
-    color: rgb(252,226,137);
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     justify-items: center;
     align-items: center;
@@ -15,9 +16,12 @@
     margin-left: 2rem;
     padding-top: 1rem;
 }
+.logoDiv h1{
+  pointer-events: none;
+}
 .navImg{
     height: 100%;
-    border-right: 0.3rem solid rgb(153, 137, 84);
+    border-right: 0.3rem solid rgb(134, 134, 134);
     margin-right: .8em;
     padding-right: .8em;
 }
@@ -44,6 +48,9 @@
 
 .controls a:hover {
     border-bottom: .2rem solid white;
+}
+.controls a:last-child:hover{
+  border-bottom: none;
 }
 
 .button {
