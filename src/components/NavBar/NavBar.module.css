@@ -1,53 +1,58 @@
-.nav{
-    height: 5rem;
-    display: flex;
+.nav {
+  height: 5rem;
+  display: flex;
 }
 
-.logoDiv{
-    display: flex;
-    flex-direction: row;
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    justify-items: center;
-    align-items: center;
-    width: 40%;
-    margin-left: 2rem;
-    padding-top: 1rem;
+.logoDiv {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  width: 40%;
+  margin-left: 2rem;
+  padding-top: 1rem;
 }
-.logoDiv h1{
+
+.logoDiv h1 {
   pointer-events: none;
 }
-.navImg{
-    height: 100%;
-    border-right: 0.3rem solid rgb(134, 134, 134);
-    margin-right: .8em;
-    padding-right: .8em;
-}
-.navImg img{
-    border-radius: 50%;
-    height: 100%;
+
+.navImg {
+  height: 100%;
+  border-right: 0.3rem solid rgb(134, 134, 134);
+  margin-right: .8em;
+  padding-right: .8em;
 }
 
-.controls{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: flex-end;
-    width: 48%;
+.navImg img {
+  border-radius: 50%;
+  height: 100%;
 }
+
+.controls {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  width: 48%;
+}
+
 .controls a {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: white;
-    border-bottom: .2rem solid transparent;
-    padding-top: .2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  border-bottom: .2rem solid transparent;
+  padding-top: .2rem;
 }
 
 .controls a:hover {
-    border-bottom: .2rem solid white;
+  border-bottom: .2rem solid white;
 }
-.controls a:last-child:hover{
+
+.controls a:last-child:hover {
   border-bottom: none;
 }
 
@@ -165,4 +170,16 @@
 
 .button:hover .button_lg::after {
   background-color: #fff;
+}
+
+.mobileNav{
+  display: none;
+}
+@media (max-width:600px) {
+  .nav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+  }
 }

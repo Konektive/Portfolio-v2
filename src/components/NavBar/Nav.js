@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import navLogo from "../assets/logo.jpg";
-import styles from "./Nav.module.css";
-import CV from "../assets/Krystian_Sporysz.pdf";
+import navLogo from "../../assets/logo.jpg";
+import styles from "./NavBar.module.css";
+import CV from "../../assets/Krystian_Sporysz.pdf";
 
 const Nav = () => {
   return (
