@@ -9,7 +9,6 @@
     right: 10%;
     height: 70%;
     animation: imageMove linear 1s;
-    /* pointer-events: none; */
  }
  
  .img img {
