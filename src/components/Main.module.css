@@ -1,11 +1,45 @@
 .main{
     height: 100vh;
-    background-color: aliceblue;
+    background: linear-gradient(180deg, #1f1619, #1c1417, #191114, #150f11, #110b0d, #0c0809, #060405, #000000);
+    color: white;
+    text-align: center;
+}
+.stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 92%;
 }
 
 .stack div{
-height: 15vh;
-width: 15vh;
+height: 10vw;
+width: 10vw;
+text-align: center;
+opacity: 0;
+filter: blur(5px);
+transform: translate(-100%);
+}
+.stack div.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+}
+
+.stack div.show:nth-child(1){
+    transition: all 1.5s;
+}
+.stack div.show:nth-child(2){
+    transition: all 1.7s ;
+}
+.stack div.show:nth-child(3){
+    transition: all 1.9s ;
+}
+.stack div.show:nth-child(4){
+    transition: all 2.1s ;
+}
+.stack div.show:nth-child(5){
+    transition: all 2.3s ;
 }
 
 .main div img{
@@ -13,14 +47,28 @@ width: 15vh;
     height: 100%;
     object-fit: contain;
 }
-.stack div:nth-child(2){
+.stack div:nth-child(2) img{
     border-radius: 15px;
     overflow: hidden;
 }
 
-.stack div:first-child{
-    border-radius: 50%;
-    overflow: hidden;
-    width: 10%;
-    height: 10%;
+
+/* .mainAnimate{
+    animation: apear 1s linear;
 }
+
+@keyframes apear {
+    from{
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+} */
+
+
+/* You can make animation with @keyframes or just add class with specific css properties for each item in list to have an unique animation for themselves so you can controll it */
